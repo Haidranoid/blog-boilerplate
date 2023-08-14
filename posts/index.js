@@ -10,6 +10,9 @@ app.use(cors());
 
 const posts = {};
 
+app.get("/posts/gg", (req, res) => {
+  res.send('gg');
+});
 app.get("/posts", (req, res) => {
   res.send(posts);
 });
